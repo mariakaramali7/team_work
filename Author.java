@@ -40,4 +40,36 @@ public class Author {
 		return numberOfWorks;
 	}
 
-//oi methodoi setters tha prostethoun meta
+public void setID(int id) //methodoi setters
+	{
+		this.id = id;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public void setNationality(String nationality)
+	{
+		this.nationality = nationality;
+	}
+
+	public void setNumberOfWorks(int numberOfWorks)
+	{
+		this.numberOfWorks = numberOfWorks;
+	}
+
+	public String toString() //methodos to String
+	{
+		int id 				= this.getID();
+		String name 		= this.getName();
+		String nationality  = this.getNationality();
+		int numberOfWorks 	= this.getNumberOfWorks();
+
+		String toPrint = "Author [ID: " + id + "], [Name: " + name +
+					"], [Nationality: " + nationality + "], [Publications: " + numberOfWorks + "]";
+		return toPrint;
+	}
+
+}
