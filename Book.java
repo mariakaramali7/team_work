@@ -47,43 +47,6 @@ public class Book {
 		return yearOfPublication;
 	}
 
-	public void setID(int id)
-	{
-		this.id = id;
-	}
 
-	public void setTitle(String title)
-	{
-		this.title = title;
-	}
-
-	public void setAuthor(Author author)
-	{
-		this.author = author;
-	}
-
-	public void setGenre(String genre)
-	{
-		this.genre = genre;
-	}
-
-	public void setYearOfPublication(int yearOfPublication)
-	{
-		this.yearOfPublication = yearOfPublication;
-	}
-
-	public String toString() //methodos toString
-	{
-		int id 					= this.getID();
-		String title 			= this.getTitle();
-		Author author 			= this.getAuthor();
-		String genre 			= this.getGenre();
-		int yearOfPublication 	= this.getYearOfPublication();
-
-		String toPrint = "Book [ID: " + id + "], [Title: " + title +
-				"], [Author: " + author.getName() + "], [Genre: " + genre +
-				"], [Published: " + yearOfPublication + "]";
-		return toPrint;
-	}
 
 }
